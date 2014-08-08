@@ -1,0 +1,19 @@
+{
+  "name": "grider",
+  "description": "Stylus grid using placeholder",
+  "version": "0.1.0",
+  "author": {
+    "name": "Diogo Moretti",
+    "url": "diogo.pearljam@gmail.com"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-stylus": "0.0.12",
+    "gulp-connect": "~0.3.0",
+    "stylus": "*",
+    "nib": "*"
+  },
+  "dependencies": {
+    "gulp-plumber": "~0.5.6"
+  }
+}

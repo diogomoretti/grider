@@ -1,0 +1,108 @@
+// Vars
+color-primary   = #e84744
+color-secondary = #323232
+color-border    = #bbb
+
+// Define button
+$button
+  display: inline-block
+  padding: .7em 1.6em
+  margin: 0 .2em
+  text-decoration: none
+  color: color-secondary
+  font-size: 1.2em
+  background: #eee
+
+// Demo Page
+body
+  background: color-primary
+  font-family: 'Arial', helvetica, sans-serif
+  font-size: 62.5%
+  transition: all .2s ease
+
+header
+  background: #fff
+  @media tablet-phone
+    text-align: center
+
+.box-logo
+  @extends $grider-9
+
+.box-meta
+  padding-top: 2.8em
+  text-align: right
+  @extends $grider-3
+
+.btn-github
+  @extends $button
+
+.btn-download
+  @extends $button
+  background: red
+
+.logo
+  color: color-primary
+  font-size: 2.4em
+  font-weight: bold
+  text-decoration: none
+  letter-spacing: -.05em
+  &:hover
+    color: lighten(color-primary, 20%)
+
+.description
+  color: color-border
+  font-size: .6em
+  font-weight: normal
+
+.plus
+  color: color-primary
+
+.section-demo 
+  margin: 8em 0
+
+  .container
+    &:hover
+      > div
+        background: rgba(darken(color-primary, 10%), .8)
+    > div
+      background: rgba(darken(color-primary, 10%), .4)
+      padding: 1.8em 2em
+      margin-top: .2em
+      margin-bottom: .2em
+      text-align: center
+      color: #fff
+      font-size: 1.2em
+
+.section-why
+  background: #fff
+
+h2
+  color: color-secondary
+  font-size: 3em
+  font-weight: bold
+  letter-spacing: -.05em
+
+p
+  font-size: 1.5em
+  color: #777
+  font-weight: 100
+  line-height: 1.6em
+
+// Demo Grider
+.container
+  @extends $container
+
+.grider1
+  @extends $grider-1
+
+.grider2
+  @extends $grider-2
+
+.grider3
+  @extends $grider-3
+
+.grider4
+  @extends $grider-4
+
+.grider6
+  @extends $grider-6
