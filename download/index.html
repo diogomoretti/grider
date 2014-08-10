@@ -17,7 +17,7 @@
         </h2>
         <p id="downloadLabel"></p>
 
-        <a href="../src/stylus/_vendor/grider.styl" class="btn-github" target="_blank">not downloaded? click here!</a>
+        <a href="https://raw.githubusercontent.com/diogomoretti/grider/gh-pages/src/stylus/_vendor/grider.styl" class="btn-github" target="_blank">not downloaded? click here!</a>
     </div>
     <script>
         var secondsBeforeDownloading = 5;
@@ -29,7 +29,7 @@
 
             if (secondsBeforeDownloading === 0){
                 label.innerHTML = 'Done!';
-                downloadFile('../src/stylus/_vendor/grider.styl');
+                downloadFile('https://raw.githubusercontent.com/diogomoretti/grider/gh-pages/src/stylus/_vendor/grider.styl');
                 clearInterval(timerInterval);
             } else {
                 label.innerHTML = 'Download will start in ' + secondsBeforeDownloading + ' seconds...';
