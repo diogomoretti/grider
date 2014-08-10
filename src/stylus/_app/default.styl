@@ -11,7 +11,14 @@ $button
   text-decoration: none
   color: color-secondary
   font-size: 1.2em
-  background: #eee
+  border-radius: 10em
+
+$btn-download
+  @extends $button
+  background: lighten(#1FA056, 10%)
+  color: #fff
+  &:hover
+    background: darken(@background, 8%)
 
 // Demo Page
 body
@@ -33,12 +40,22 @@ header
   text-align: right
   @extends $grider-3
 
+.box-featured
+  padding-bottom: 3em
+  text-align: center
+
 .btn-github
   @extends $button
+  background: #eee
+  &:hover
+    background: darken(@background, 7%)
 
 .btn-download
-  @extends $button
-  background: red
+  @extends $btn-download
+
+.btn-download-featured
+  @extends $btn-download
+  font-size: 1.8em
 
 .logo
   color: color-primary
@@ -58,35 +75,89 @@ header
   color: color-primary
 
 .section-demo 
-  margin: 8em 0
+  margin: 2em 0 8em 0
 
-  .container
-    &:hover
-      > div
-        background: rgba(darken(color-primary, 10%), .8)
+.container-demo
+  &:hover
     > div
-      background: rgba(darken(color-primary, 10%), .4)
-      padding: 1.8em 2em
-      margin-top: .2em
-      margin-bottom: .2em
-      text-align: center
-      color: #fff
-      font-size: 1.2em
+      background: rgba(darken(color-primary, 10%), .9)
+  > div
+    background: rgba(darken(color-primary, 10%), .6)
+    padding: 1.8em 2em
+    margin-top: .2em
+    margin-bottom: .2em
+    text-align: center
+    color: #fff
+    font-size: 1.2em
 
 .section-why
   background: #fff
+  padding-bottom: 4em
+
+#downloadLabel
+  text-align: center
+  color: #eee
 
 h2
   color: color-secondary
-  font-size: 3em
+  font-size: 4em
   font-weight: bold
   letter-spacing: -.05em
+  text-align: center
+
+h3
+  font-size: 1.6em
+
+.highlight
+  color: color-primary
+
+.intro-text
+  color: #fff
+  font-size: 4em
+  font-weight: normal
+  letter-spacing: 0
+  text-transform: lowercase
+  width: 70%
+  margin: 1em auto .5em auto
+
+pre
+  font-size: 1.4em
 
 p
-  font-size: 1.5em
+  font-size: 1.6em
   color: #777
   font-weight: 100
-  line-height: 1.6em
+  line-height: 2em
+  a
+    color: darken(#777, 50%)
+    text-decoration: none
+    border-bottom: 1px solid #ccc
+  code
+    background: #eee
+    color: #333
+    padding: .2em .3em
+
+.responsive-example
+  padding: 3em 0
+
+.next-demo
+  padding: 2em 0
+
+.container-download
+  text-align: center
+
+.credits
+  color: #fff
+  text-align: center
+  line-height: 1
+
+.credits-link
+  color: #ccc
+  &:hover
+    color: #fff
+
+.credits-inspiration
+  font-size: 1.2em
 
 // Demo Grider
 .container
@@ -104,5 +175,13 @@ p
 .grider4
   @extends $grider-4
 
-.grider6
+.grider6, .code-example
   @extends $grider-6
+
+.sidebar
+  @extends $grider-3
+  @extends $grider-tablet-5
+
+.content
+  @extends $grider-9
+  @extends $grider-tablet-7

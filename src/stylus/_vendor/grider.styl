@@ -111,3 +111,13 @@ for index in (1..grider-config-columns)
         column(2)
     @media phone
       column(12)
+
+@media tablet
+  for index in (1..grider-config-columns) 
+    $grider-tablet-{index}
+      column(index)
+
+@media phone
+  for index in (1..grider-config-columns) 
+    $grider-phone-{index}
+      column(index)

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>Downloading Grider...</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script src="../assets/js/download.min.js"></script>
+</head>
+<body>
+    <div class="container container-download">
+        <h2 class="intro-text">
+            thank you for download ;)
+        </h2>
+        <p id="downloadLabel"></p>
+
+        <a href="../src/stylus/_vendor/grider.styl" class="btn-github" target="_blank">not downloaded? click here!</a>
+    </div>
+    <script>
+        var secondsBeforeDownloading = 5;
+
+        var timerInterval = setInterval('setDownloadText()', 1000);
+
+        var setDownloadText = function() {
+            var label = document.getElementById('downloadLabel');
+
+            if (secondsBeforeDownloading === 0){
+                label.innerHTML = 'Done!';
+                downloadFile('../src/stylus/_vendor/grider.styl');
+                clearInterval(timerInterval);
+            } else {
+                label.innerHTML = 'Download will start in ' + secondsBeforeDownloading + ' seconds...';
+                secondsBeforeDownloading--;
+            }
+        }
+    </script>
+</body>
+</html>

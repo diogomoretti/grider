@@ -7,6 +7,7 @@
     <title>Grider</title>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/prism.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
@@ -19,13 +20,18 @@
                 </h1>
             </div>
             <div class="box-meta">
-                <a class="btn-github" href="#">Github</a>
-                <a class="btn-download" href="#">Download</a>
+                <a class="btn-github" href="https://github.com/diogomoretti/grider" target="_blank">Github</a>
             </div>
         </div>
     </header>
     <section class="section-demo">
-        <div class="container">
+        <div class="container box-featured">
+            <h2 class="intro-text">
+                Fluid, Semantic, Responsive and Fully-Configurable grid system for Stylus
+            </h2>
+            <a href="download" class="btn-download-featured" target="_blank">Download</a>
+        </div>
+        <div class="container container-demo">
             <div class="grider1">1</div>
             <div class="grider1">1</div>
             <div class="grider1">1</div>
@@ -40,7 +46,7 @@
             <div class="grider1">1</div>
         </div>
 
-        <div class="container">
+        <div class="container container-demo">
             <div class="grider2">2</div>
             <div class="grider2">2</div>
             <div class="grider2">2</div>
@@ -49,29 +55,131 @@
             <div class="grider2">2</div>
         </div>
 
-        <div class="container">
+        <div class="container container-demo">
             <div class="grider3">3</div>
             <div class="grider3">3</div>
             <div class="grider3">3</div>
             <div class="grider3">3</div>
         </div>
 
-        <div class="container">
+        <div class="container container-demo">
             <div class="grider4">4</div>
             <div class="grider4">4</div>
             <div class="grider4">4</div>
         </div>
 
-        <div class="container">
+        <div class="container container-demo">
             <div class="grider6">6</div>
             <div class="grider6">6</div>
         </div>
     </section>
     <section class="section-why">
         <div class="container">
-            <h2>why placeholder is magnific?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum accusantium eos ipsum ex quidem labore officiis fugit enim qui doloremque sint ut repellat inventore, placeat, odio ducimus, rem vero similique.</p>
+            <h2>why choose the <span class="highlight">grider</span>?</h2>
+            <p>This grid is magnific because it is made using <a href="http://learnboost.github.io/stylus/docs/extend.html#extending-placeholder-selectors">placeholder</a>. Placeholders are pseudo-classes that you can extend from your real classes using <code>@extends</code>. The difference between Placeholder and "normal extend class" is that Placeholder <strong>make a nested classes using the same placeholder</strong>, in addition to <strong>compile only used placeholders</strong>. Go to a practical example:</p>
+            
+            <div class="code-example">
+                <h3>main.styl</h3>
+                <pre><code class="language-css">@import "path/to/grider"
+
+.sidebar
+  @extends $grider-3
+
+.another-box
+  @extends $grider-3
+
+.content
+  @extends $grider-9</code></pre>
+            </div>
+            <div class="code-example">
+                <h3>main.css</h3>
+                <pre><code class="language-css">.sidebar,
+.another-box {
+    /* Generated code by Grider */
+}
+
+.content {
+    /* Generated code by Grider */
+}
+
+/* Responsive for tablets and phones below */</code></pre>
+            </div>
         </div>
     </section>
+
+    <section class="section-why">
+        <div class="container">
+            <h2>getting started in <span class="highlight">2</span> steps</h2>
+            
+            <h3>Step 1: Import the <code>grider.styl</code> file</h3>
+            <pre><code class="language-css">@import "path/to/grider"</code></pre>
+
+            <h3>Step 2: Set the container (if you want) and number of columns (from 1 to 12)</h3>
+            <pre><code class="language-css">.container
+  @extends $container
+
+.sidebar
+  @extends $grider-3
+
+.content
+  @extends $grider-9
+</code></pre>
+
+        <p><strong>Note: </strong>The <code>.container</code> is not mandatory. Basically the <code>$container</code> make a centered element with <code>1040px</code> (config) of <code>max-width</code>.</p>
+        </div>
+    </section>
+
+    <section class="section-why">
+        <div class="container">
+            <h2>as the <span class="highlight">responsive</span> works?</h2>
+            
+            <h3>Automatic Responsive</h3>
+            <p>Elements that have <code>$grider-1</code>, <code>$grider-2</code>, <code>$grider-3</code>, <code>$grider-4</code> and <code>$grider-6</code> will automatically adapt in <strong>tablets</strong> and <strong>phones</strong>. You can configure measures and add more devices easily.</p>
+
+            <h3>Responsive manually</h3>
+            <p>For made responsive is very easy, because you set the responsive nested with element:</p>
+            <pre><code class="language-css">.sidebar
+  @extends $grider-3
+  @extends $grider-tablet-5
+
+.content
+  @extends $grider-9
+  @extends $grider-tablet-7
+</code></pre>
+        </div>
+    </section>
+    <section class="responsive-example">
+        <div class="container container-demo">
+            <div class="sidebar">.sidebar</div>
+            <div class="content">.content</div>
+        </div>
+    </section>
+    <section class="section-why next-demo">
+        <div class="container">
+        <h3>BONUS: The <code>@media-querie</code> rules can be used in all code:</h3>
+        <pre><code class="language-css">/* Different rules for tablet and phone */
+.my-element
+  display: block
+  color: red
+  @media tablet
+    color: green
+  @media phone
+    display: none
+
+/* Same rule for tablet and phone */
+.my-other-element
+  display: block
+  color: red
+  @media tablet-phone
+    display: none
+</code></pre>
+        </div>
+    </section>
+    <footer>
+        <p class="credits">Made with ❤︎ by <a class="credits-link" href="https://github.com/diogomoretti" target="_blank">Diogo Moretti</a></p>
+        <p class="credits credits-inspiration">The Grider was inspired in <a class="credits-link" href="http://semantic.gs" target="_blank">semantic.gs</a></p>
+    </footer>
+
+    <script src="assets/js/prism.js"></script>
 </body>
 </html>
