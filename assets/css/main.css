@@ -261,6 +261,20 @@ body *zoom:1:after {
 }
 @media (max-width: 580px) {
 }
+@media (max-width: 880px) {
+  .box-logo,
+  .box-meta {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    padding: 0 0;
+    width: 99.51923076923077%;
+    margin: 0 0.2403846153846154%;
+    margin-bottom: 0.3em;
+    *width: 105.23362379807693%;
+    *margin: 0 0.24025941506410256%;
+  }
+}
 @media (min-width: 581px) and (max-width: 880px) {
   .sidebar {
     display: inline;
@@ -509,9 +523,17 @@ header {
     text-align: center;
   }
 }
+@media (max-width: 880px) {
+}
 .box-meta {
   padding-top: 2.8em;
   text-align: right;
+}
+@media (max-width: 880px) {
+  .box-meta {
+    text-align: center;
+    padding: 0 0 2em 0;
+  }
 }
 .box-featured {
   padding-bottom: 3em;
@@ -623,7 +645,7 @@ p code {
   line-height: 1;
 }
 .credits-link {
-  color: #ccc;
+  color: #ddd;
 }
 .credits-link:hover {
   color: #fff;

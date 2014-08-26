@@ -34,11 +34,17 @@ header
 
 .box-logo
   @extends $grider-9
+  @media tablet-phone
+    @extends $grider-tablet-phone-12
 
 .box-meta
   padding-top: 2.8em
   text-align: right
   @extends $grider-3
+  @media tablet-phone
+    @extends $grider-tablet-phone-12
+    text-align: center
+    padding: 0 0 2em 0
 
 .box-featured
   padding-bottom: 3em
@@ -152,7 +158,7 @@ p
   line-height: 1
 
 .credits-link
-  color: #ccc
+  color: #ddd
   &:hover
     color: #fff
 
