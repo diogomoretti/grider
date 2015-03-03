@@ -6,18 +6,25 @@
 // ========== CONFIG ==========
 // ============================
 
+// Num of columns
 grider-config-columns             = 12
+
 // Spacing between columns - value in px
 grider-config-gutter              = 5
+
 // Max size of container
 grider-config-container           = 1040px
+
 // Padding in column - values with unit (px, em, percent...)
 grider-config-padding-column      = 0
+
 // Padding in container - values with unit (px, em, percent...)
 grider-config-padding-container   = 0 1em
+
 // Margin bottom for each column - values with unit (px, em, percent...)
 grider-config-marginbottom-column = .3em
-// Calc for obtain column-width
+
+// Calc for obtain column-width (DO NOT CHANGE!)
 grider-config-column-width        = grider-config-container / grider-config-columns
 
 // ========== DEVICES =========
@@ -34,8 +41,6 @@ tablet-phone = "(max-width: " + (grider-device-tablet) + ")"
 // ========== HELPERS =========
 // ============================
 *, *:before, *:after
-  -moz-box-sizing: border-box
-  -webkit-box-sizing: border-box
   box-sizing: border-box
 
 clearfix()
@@ -97,18 +102,6 @@ offset(offset = 1)
 for index in (1..grider-config-columns)
   $grider-{index}
     column(index)
-    if index == 6
-      @media tablet
-        column(12)
-    if index == 3
-      @media tablet
-        column(6)
-    if index == 2
-      @media tablet
-        column(4)
-    if index == 1
-      @media tablet
-        column(2)
     @media phone
       column(12)
 

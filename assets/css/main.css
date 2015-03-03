@@ -1,8 +1,6 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -36,20 +34,6 @@ body *zoom:1:after {
   *width: 8.328993055555555%;
   *margin: 0 0.24025941506410256%;
 }
-@media (min-width: 581px) and (max-width: 880px) {
-  .grider1,
-.grider1 {
-    display: inline;
-    float: left;
-    overflow: hidden;
-    padding: 0 0;
-    width: 16.185897435897438%;
-    margin: 0 0.2403846153846154%;
-    margin-bottom: 0.3em;
-    *width: 17.138504941239315%;
-    *margin: 0 0.24025941506410256%;
-  }
-}
 @media (max-width: 580px) {
   .grider1,
 .grider1 {
@@ -74,20 +58,6 @@ body *zoom:1:after {
   margin-bottom: 0.3em;
   *width: 17.138504941239315%;
   *margin: 0 0.24025941506410256%;
-}
-@media (min-width: 581px) and (max-width: 880px) {
-  .grider2,
-.grider2 {
-    display: inline;
-    float: left;
-    overflow: hidden;
-    padding: 0 0;
-    width: 32.8525641025641%;
-    margin: 0 0.2403846153846154%;
-    margin-bottom: 0.3em;
-    *width: 34.75752871260684%;
-    *margin: 0 0.24025941506410256%;
-  }
 }
 @media (max-width: 580px) {
   .grider2,
@@ -115,24 +85,6 @@ body *zoom:1:after {
   margin-bottom: 0.3em;
   *width: 25.94801682692308%;
   *margin: 0 0.24025941506410256%;
-}
-@media (min-width: 581px) and (max-width: 880px) {
-  .box-meta,
-  .grider3,
-  .sidebar,
-.box-meta,
-.grider3,
-.sidebar {
-    display: inline;
-    float: left;
-    overflow: hidden;
-    padding: 0 0;
-    width: 49.519230769230774%;
-    margin: 0 0.2403846153846154%;
-    margin-bottom: 0.3em;
-    *width: 52.37655248397436%;
-    *margin: 0 0.24025941506410256%;
-  }
 }
 @media (max-width: 580px) {
   .box-meta,
@@ -190,22 +142,6 @@ body *zoom:1:after {
   margin-bottom: 0.3em;
   *width: 52.37655248397436%;
   *margin: 0 0.24025941506410256%;
-}
-@media (min-width: 581px) and (max-width: 880px) {
-  .grider6,
-  .code-example,
-.grider6,
-.code-example {
-    display: inline;
-    float: left;
-    overflow: hidden;
-    padding: 0 0;
-    width: 99.51923076923077%;
-    margin: 0 0.2403846153846154%;
-    margin-bottom: 0.3em;
-    *width: 105.23362379807693%;
-    *margin: 0 0.24025941506410256%;
-  }
 }
 @media (max-width: 580px) {
   .grider6,
