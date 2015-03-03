@@ -13,5 +13,20 @@
 - `box-sizing: border-box` included
 - Devices included for responsive for all code
 
+## Contributing
+ 
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
+
+## Changelog
+
+* **2015-02-24 | v1.1.0:** Automatic responsive only in phone device
+* **2014-08-07 | v1.0.0:** First version
+
+
+
 ## License
 [MIT License](https://github.com/diogomoretti/MITLicense) - Diogo Moretti
