@@ -23,7 +23,7 @@
 
 ## Changelog
 
-* **2015-02-24 | v1.1.0:** Automatic responsive only in phone device
+* **2015-03-03 | v1.1.0:** Automatic responsive only in phone device
 * **2014-08-07 | v1.0.0:** First version
 
 
