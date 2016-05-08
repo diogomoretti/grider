@@ -1,5 +1,5 @@
 # grider
-> Stylus grid system using placeholder
+> Stylus Grid System using placeholder
 
 ### [Visit page for Demo and Instructions](http://diogomoretti.github.io/grider)
 
@@ -23,6 +23,7 @@
 
 ## Changelog
 
+* **2016-05-08 | v1.1.1:** Remove automatic responsive and unnecessary code
 * **2015-03-03 | v1.1.0:** Automatic responsive only in phone device
 * **2014-08-07 | v1.0.0:** First version
 
