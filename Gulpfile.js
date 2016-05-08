@@ -9,13 +9,6 @@ var paths = {
     html:   '*.html'
 };
 
-/* 
-  Release Task
-  Type: `gulp tag` to release a new version
-  Reference: https://github.com/lfender6445/gulp-release-tasks
-*/
-require('gulp-release-tasks')(gulp);
-
 // Connect task
 gulp.task('connect', connect.server({
     root: __dirname + '/',

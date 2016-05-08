@@ -13,7 +13,6 @@
   "devDependencies": {
     "gulp": "*",
     "gulp-connect": "~0.3.0",
-    "gulp-release-tasks": "0.0.3",
     "gulp-stylus": "0.0.12",
     "nib": "*",
     "stylus": "*"
