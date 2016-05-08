@@ -9,6 +9,13 @@ var paths = {
     html:   '*.html'
 };
 
+/* 
+  Release Task
+  Type: `gulp tag` to release a new version
+  Reference: https://github.com/lfender6445/gulp-release-tasks
+*/
+require('gulp-release-tasks')(gulp);
+
 // Connect task
 gulp.task('connect', connect.server({
     root: __dirname + '/',
@@ -29,7 +36,7 @@ gulp.task('stylus', function () {
         .pipe(plumber())
         .pipe(stylus({
             use: ['nib'], 
-            //set: ['compress']
+            set: ['compress']
         }))
         .pipe(gulp.dest('./assets/css'))
         .pipe(connect.reload());

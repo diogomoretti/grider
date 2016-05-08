@@ -12,10 +12,11 @@
   },
   "devDependencies": {
     "gulp": "*",
-    "gulp-stylus": "0.0.12",
     "gulp-connect": "~0.3.0",
-    "stylus": "*",
-    "nib": "*"
+    "gulp-release-tasks": "0.0.3",
+    "gulp-stylus": "0.0.12",
+    "nib": "*",
+    "stylus": "*"
   },
   "dependencies": {
     "gulp-plumber": "~0.5.6"

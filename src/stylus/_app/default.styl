@@ -86,15 +86,16 @@ header
 .container-demo
   &:hover
     > div
-      background: rgba(darken(color-primary, 10%), .9)
+      background: rgba(#eee, .9)
   > div
     config-margin = .2em
-    background: rgba(darken(color-primary, 10%), .6)
+    background: #eee
     padding: 1.8em 2em
     margin-top: config-margin
     margin-bottom: config-margin
     text-align: center
-    color: #fff
+    color: #333
+    font-weight: bold
     font-size: 1.2em
 
 .section-why
@@ -172,23 +173,35 @@ p
 
 .grider1
   @extends $grider-1
+  @media phone
+    @extends $grider-phone-12
 
 .grider2
   @extends $grider-2
+  @media phone
+    @extends $grider-phone-12
 
 .grider3
   @extends $grider-3
+  @media phone
+    @extends $grider-phone-12
 
 .grider4
   @extends $grider-4
+  @media phone
+    @extends $grider-phone-12
 
 .grider6, .code-example
   @extends $grider-6
+  @media phone
+    @extends $grider-phone-12
 
 .sidebar
   @extends $grider-3
   @extends $grider-tablet-5
+  @extends $grider-phone-12
 
 .content
   @extends $grider-9
   @extends $grider-tablet-7
+  @extends $grider-phone-12
